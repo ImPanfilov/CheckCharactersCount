@@ -64,7 +64,7 @@ public class Main {
                 do {
                     stringTemp=readFile(fileStreamReader);
                         System.out.println("Thread " + Thread.currentThread().getName() + " is calculating ");
-                        Map<Character, Integer> tempMap = stringTemp.chars().//filter(s->(s<126)&&(s>32)).
+                        Map<Character, Integer> tempMap = stringTemp.chars().
                                 collect(HashMap::new, (map, value) -> {
                             map.merge((char) value, 1, Integer::sum);
                         }, HashMap::putAll);
