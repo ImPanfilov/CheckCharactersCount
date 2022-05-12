@@ -78,6 +78,7 @@ public class Main {
         };
     }
 
+
     public static String readFile(BufferedReader fileStreamReader) throws IOException {
         char[] buffer=new char[sizeReadBuffer];
         int countReadingChar=0;
