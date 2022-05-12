@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args){
         String inputFileName="file.txt";
         int lengthFile = 102400000;
-        //writeFile(inputFileName, lengthFile);//заполнение файла символами
+        writeFile(inputFileName, lengthFile);//заполнение файла символами
         numberOfThreads= Runtime.getRuntime().availableProcessors();
         executor = Executors.newFixedThreadPool(numberOfThreads);
 
